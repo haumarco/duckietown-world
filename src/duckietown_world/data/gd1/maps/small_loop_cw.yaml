@@ -1,7 +1,117 @@
 # 3x3 tiles with right turns at the corners going in a clockwise loop
-tiles:
-- [curve_right/N, straight/E, curve_right/E]
-- [straight/N   , asphalt   , straight/S]
-- [curve_right/W, straight/W, curve_right/S]
-
+objects:
+  tag300:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 1.632
+        - 0.132
+        theta_deg: 225
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 300
+  tag301:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 1.6019999999999999
+        - 1.617
+        theta_deg: 315
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 301
+  tag302:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 0.14200000000000002
+        - 0.132
+        theta_deg: 135
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 302
+  tag316:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 0.637
+        - 0.647
+        theta_deg: 0
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 316
+  tag317:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 0.14700000000000002
+        - 1.627
+        theta_deg: 45
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 317
+  tag328:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 1.127
+        - 1.147
+        theta_deg: 0
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 328
+  tag330:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 0.637
+        - 1.117
+        theta_deg: 0
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 330
+  tag335:
+    kind: floor_tag
+    pose:
+      ~SE2Transform:
+        p:
+        - 1.127
+        - 0.647
+        theta_deg: 0
+    tag:
+      ~TagInstance:
+        family: 36h11
+        size: 0.08
+        tag_id: 335
 tile_size: 0.585
+tiles:
+- - curve_right/N
+  - straight/E
+  - curve_right/E
+- - straight/N
+  - asphalt
+  - straight/S
+- - curve_right/W
+  - straight/W
+  - curve_right/S
